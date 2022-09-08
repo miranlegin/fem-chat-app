@@ -1,0 +1,27 @@
+{
+  "chat": [
+    {
+      "chat-them": "That sounds great. I’d be happy with that.",
+      "chat-me": ""
+    },
+    {
+      "chat-them": "Could you send over some pictures of your dog, please?",
+      "chat-me": ""
+    },
+    {
+      "chat-gallery": true
+    },
+    {
+      "chat-them": "",
+      "chat-me": "Here are a few pictures. She’s a happy girl!"
+    },
+    {
+      "chat-them": "",
+      "chat-me": "Can you make it?"
+    },
+    {
+      "chat-them": "She looks so happy! The time we discussed works. How long shall I take her out for?",
+      "chat-me": ""
+    }
+  ]
+}

@@ -1,1 +1,37 @@
-// variables
+// breakpoints
+
+$bp-mobile: 375px;
+$bp-desktop: 1440px;
+$breakpoint: 992px;
+
+// colors
+// primary
+
+$chat-them: hsl(276, 55%, 52%);
+$chat-me: hsl(271, 15%, 43%);
+$placeholder: hsl(206, 6%, 79%);
+$main-heading: hsl(271, 36%, 24%);
+$sub-heading: hsl(276, 100%, 81%);
+$paragraph: hsl(270, 7%, 64%);
+
+// gradients
+$grad-magenta: hsl(293, 100%, 63%);
+$grad-violet: hsl(264, 100%, 61%);
+
+// secondary
+
+$white: hsl(0, 0%, 100%);
+$app-bg: hsl(270, 20%, 96%);
+$submit-bg: hsl(271, 36%, 24%);
+$radio-outline: hsl(289, 100%, 72%);
+
+// typography
+
+$ff-body: 'Rubik', sans-serif;
+
+// 16px
+$fs-base: 1rem;
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;

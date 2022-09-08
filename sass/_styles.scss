@@ -1,1 +1,84 @@
-// general styling
+html {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: $ff-body;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  overflow-x: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 32rem;
+  }
+
+  &::before {
+    height: 55vh;
+    top: 0;
+    right: 50%;
+
+    background-image: linear-gradient(to bottom, $grad-magenta, $grad-violet);
+    border-radius: 0 0 100vh 100vh;
+
+    @media (min-width: $breakpoint) {
+      right: calc(50vw + 300px);
+      height: calc(100vh / 8 * 7);
+    }
+  }
+
+  @media (min-width: $breakpoint) {
+    &::after {
+      height: calc(100vh - 120px);
+      bottom: 0;
+      left: calc(50vw + 395px);
+      background-color: $app-bg;
+      border-radius: 100vh 100vh 0 0;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-block: 1rem;
+
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+.intro {
+  margin-block: 1rem;
+  padding-inline: 2rem;
+
+  @media (max-width: #{$breakpoint - 1px}) {
+    text-align: center;
+  }
+
+  @media (min-width: $breakpoint) {
+    padding-inline: 1rem;
+  }
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: $main-heading;
+}
+
+p {
+  color: $paragraph;
+  line-height: 1.75rem;
+}

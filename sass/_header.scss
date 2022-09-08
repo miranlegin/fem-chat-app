@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  background-image: linear-gradient(to right, $grad-violet, $grad-magenta);
+  border-radius: 1rem 1rem 0.25rem 0.25rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1.125rem;
+    top: 0;
+    left: 3rem;
+    right: 3rem;
+    background-color: $white;
+    border-radius: 0 0 0.75rem 0.75rem;
+  }
+
+  &-arrow {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &-avatar {
+    flex-shrink: 0;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid $white;
+  }
+
+  &-id {
+    flex-grow: 1;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: $white;
+    text-shadow: 0 0 1px rgba(#000, 0.5);
+  }
+
+  &-subtitle {
+    font-size: 0.5rem;
+    color: $sub-heading;
+  }
+
+  &-dots {
+    opacity: 0.8;
+    color: #fff;
+    transform: rotate(-90deg);
+  }
+}

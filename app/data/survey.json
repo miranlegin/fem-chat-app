@@ -1,0 +1,12 @@
+{
+  "survey": [
+    {
+      "survey-title": "30 minute walk",
+      "survey-price": "$29"
+    },
+    {
+      "survey-title": "1 hour walk",
+      "survey-price": "$49"
+    }
+  ]
+}
